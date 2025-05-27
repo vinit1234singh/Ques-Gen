@@ -9,6 +9,8 @@ public class GetParseData {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
+    String parseData = null;
+
     /**
      * @return Parsing data from OCR Microservice
      */
@@ -16,6 +18,7 @@ public class GetParseData {
        
             String url = "https://9034-35-229-129-145.ngrok-free.app";
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            parseData = response.getBody();
             return response.getBody();
 
 
