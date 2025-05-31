@@ -21,9 +21,6 @@ public class GetParseData {
             parseData = response.getBody();
             System.out.println(parseData);
             return response.getBody();
-
-
-       
     }
 
 }
