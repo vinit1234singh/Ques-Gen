@@ -6,10 +6,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.util.Date;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,10 +21,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class UploadAPIService {
      private static final String UPLOAD_DIR = "uploads";
+     @Autowired
+     GetParseData getParseData;
+     @Autowired
+     GeminiAPICall geminiAPICall;
     public String requestFile(MultipartFile file, String descrition){
-
-    
-
         DataSource dataSource = null;
         Connection connection = null;
         PreparedStatement preparedStatement=null;
@@ -44,25 +45,27 @@ public class UploadAPIService {
             dataSource = ConfigDataSource.source();
             connection = dataSource.getConnection();
             preparedStatement = connection.prepareStatement("insert into filelstr (File_Name, File_Extension, File_Path, File_Size, File_Upload_Date) values (?,?,?,?,?)");
-
             preparedStatement.setString(1, file.getOriginalFilename());
-            System.out.println("data Updated");
             preparedStatement.setString(2, "jpg");
-            System.out.println("data Updated");
             preparedStatement.setString(3, UPLOAD_DIR+"/"+file.getOriginalFilename());
-            System.out.println("data Updated");
             String size = Long.toString(file.getSize());
             preparedStatement.setString(4, size);
-            System.out.println("data Updated");
             preparedStatement.setDate(5, sqlDate);
-            System.out.println("data Updated");
+           
 
             preparedStatement.executeUpdate();
             connection.close();
             System.out.println("data Updated");
             Path filePath = uploadPath.resolve(file.getOriginalFilename());
             Files.copy(file.getInputStream(), filePath,StandardCopyOption.REPLACE_EXISTING);
-            return "File Uploaded:--"+file.getOriginalFilename();
+            System.out.println("File Uploaded:--"+file.getOriginalFilename());
+            //String responseFileUpload = getParseData.getParseData();
+
+            System.out.println("Response Generated from Python");
+
+            String geminiresponse = geminiAPICall.googleGemniAPICall();
+            System.out.println(geminiresponse);
+            return geminiresponse;
         } catch (Exception e) {
             return e.getMessage();
         }
