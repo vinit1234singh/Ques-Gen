@@ -32,10 +32,6 @@ public class GeminiAPICall {
         PartWrapper partWrapper = new PartWrapper(Collections.singletonList(textPart));
         ContentRequest request = new ContentRequest(Collections.singletonList(partWrapper));
 
-        // Headers
-      
-        
-
         // Wrap in HttpEntity
         HttpEntity<ContentRequest> httpEntity = new HttpEntity<>(request, headers);
 

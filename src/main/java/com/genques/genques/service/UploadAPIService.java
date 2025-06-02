@@ -46,7 +46,14 @@ public class UploadAPIService {
             connection = dataSource.getConnection();
             preparedStatement = connection.prepareStatement("insert into filelstr (File_Name, File_Extension, File_Path, File_Size, File_Upload_Date) values (?,?,?,?,?)");
             preparedStatement.setString(1, file.getOriginalFilename());
-            preparedStatement.setString(2, "jpg");
+            int index = 0;
+            for(int i=0;i<file.getOriginalFilename().length();i++){
+                if(file.getOriginalFilename().charAt(i) == '.'){
+                    index = i;
+                }
+            }
+            String extension = file.getOriginalFilename().substring(index+1, file.getOriginalFilename().length());
+            preparedStatement.setString(2, extension);
             preparedStatement.setString(3, UPLOAD_DIR+"/"+file.getOriginalFilename());
             String size = Long.toString(file.getSize());
             preparedStatement.setString(4, size);
