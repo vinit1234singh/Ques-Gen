@@ -44,11 +44,16 @@ This project includes 3 core microservices:
 ## 🧰 Tech Stack
 
 Layer	Technology
-Upload Service	Java 17, Spring Boot, JPA, MySQL
+Upload Service -->	Java 17, Spring Boot, JPA, MySQL
+
 OCR Service	Python 3.x, Tesseract OCR, Flask
+
 AI Generator	Spring Boot, REST APIs, Gemini API
+
 File Transfer	FTP Protocol
+
 Database	MySQL or PostgreSQL
+
 
 ## 🛠️ Setup & Usage
 
