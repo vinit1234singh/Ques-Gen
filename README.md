@@ -22,3 +22,43 @@ This project includes 3 core microservices:
 ## ⚙️ Architecture
 
 <details> <summary>Click to expand Mermaid diagram</summary> <pre> ```mermaid graph TD A[Client API Call] --> B[Upload Service (Spring Boot)] B --> C[Save metadata to DB] B --> D[FTP File to /IN Directory] D --> E[OCR Service (Python)] E --> F[Extract Text with Tesseract] F --> G[Send Parsed Text to Response Generator] G --> H[Call Google Gemini API] H --> I[Return Generated AI Response] ``` </pre> </details>
+
+
+💡 Key Features
+✅ Headless API-first design (no frontend required)
+
+📂 Multipart file upload + file description
+
+🔄 FTP-based file transfer between services
+
+🧠 Tesseract-based OCR in Python
+
+🤖 AI response generation via Gemini API
+
+🧱 Built to be extended for personal AI agent backends
+
+💾 Database persistence for metadata
+
+🧰 Tech Stack
+Layer	Technology
+Upload Service	Java 17, Spring Boot, JPA, MySQL
+OCR Service	Python 3.x, Tesseract OCR, Flask
+AI Generator	Spring Boot, REST APIs, Gemini API
+File Transfer	FTP Protocol
+Database	MySQL or PostgreSQL
+
+🛠️ Setup & Usage
+🔗 Prerequisites
+Java 17+
+
+Python 3.8+
+
+Maven
+
+Tesseract installed
+
+FTP Server (e.g., vsftpd)
+
+MySQL/Postgres
+
+Google Gemini API Key
