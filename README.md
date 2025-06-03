@@ -21,13 +21,4 @@ This project includes 3 core microservices:
 
 ## ⚙️ Architecture
 
-```mermaid
-graph LR
-A[Client API Call] --> B[Upload Service (Spring Boot)]
-B --> C[Save metadata to DB]
-B --> D[FTP File to /IN Directory]
-D --> E[OCR Service (Python)]
-E --> F[Extract Text with Tesseract]
-F --> G[Send Parsed Text to Response Generator]
-G --> H[Call Google Gemini API]
-H --> I[Return Generated AI Response]
+<details> <summary>Click to expand Mermaid diagram</summary> <pre> ```mermaid graph TD A[Client API Call] --> B[Upload Service (Spring Boot)] B --> C[Save metadata to DB] B --> D[FTP File to /IN Directory] D --> E[OCR Service (Python)] E --> F[Extract Text with Tesseract] F --> G[Send Parsed Text to Response Generator] G --> H[Call Google Gemini API] H --> I[Return Generated AI Response] ``` </pre> </details>
