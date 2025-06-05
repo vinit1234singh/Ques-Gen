@@ -18,7 +18,7 @@ public class GetParseData {
      */
     public String getParseData(){
        
-            String url = "https://aeab-35-226-2-39.ngrok-free.app/getParsedata";
+            String url = "https://1e8d-35-247-53-54.ngrok-free.app/getParsedata";
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
             parseData = response.getBody();
             System.out.println(parseData);
