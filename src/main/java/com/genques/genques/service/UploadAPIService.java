@@ -70,7 +70,7 @@ public class UploadAPIService {
 
             System.out.println("Response Generated from Python");
 
-            String geminiresponse = geminiAPICall.googleGemniAPICall();
+            String geminiresponse = geminiAPICall.googleGemniAPICall(descrition);
             System.out.println(geminiresponse);
             return geminiresponse;
         } catch (Exception e) {

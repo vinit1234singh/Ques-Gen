@@ -11,8 +11,11 @@ import com.genques.genques.model.ContentRequest;
 import com.genques.genques.model.PartWrapper;
 import com.genques.genques.model.TextPart;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
 @Component
+@Slf4j
 public class GeminiAPICall {
 
     @Autowired
@@ -24,11 +27,18 @@ public class GeminiAPICall {
             headers.setContentType(MediaType.APPLICATION_JSON); 
         }
 
-    public String googleGemniAPICall(){
+    public String googleGemniAPICall(String descrition){
         String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCy0Wx_76QmnxD2OkudtIrvtVaifXptF_M";
 
+        log.debug("Inside  Gemini Call");
+        if(getParseData.getParseData().equals("Data is Empty")){
+            return "Parse Data is not present";
+        }
+        else if (getParseData.getParseData().contains("4")) {
+            return "Client Side Error";
+        }
         // Create request body
-        TextPart textPart = new TextPart(getParseData.getParseData()+"Generate five best Question");
+        TextPart textPart = new TextPart(getParseData.getParseData()+descrition);
         PartWrapper partWrapper = new PartWrapper(Collections.singletonList(textPart));
         ContentRequest request = new ContentRequest(Collections.singletonList(partWrapper));
 
@@ -41,7 +51,7 @@ public class GeminiAPICall {
 
         // Print response
         
-        
+        log.debug("Gemini call Exit");
         return response.getBody();
 
     }
