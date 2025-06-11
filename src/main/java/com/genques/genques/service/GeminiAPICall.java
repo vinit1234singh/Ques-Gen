@@ -1,4 +1,5 @@
 package com.genques.genques.service;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
@@ -6,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
-
+import org.slf4j.Logger;
 import com.genques.genques.model.ContentRequest;
 import com.genques.genques.model.PartWrapper;
 import com.genques.genques.model.TextPart;
@@ -17,6 +18,9 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 @Slf4j
 public class GeminiAPICall {
+
+    private static final Logger logger = LoggerFactory.getLogger(GeminiAPICall.class);
+
 
     @Autowired
     GetParseData getParseData;
@@ -30,7 +34,7 @@ public class GeminiAPICall {
     public String googleGemniAPICall(String descrition){
         String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCy0Wx_76QmnxD2OkudtIrvtVaifXptF_M";
 
-        log.debug("Inside  Gemini Call");
+        logger.info("Inside  Gemini Call");
         if(getParseData.getParseData().equals("Data is Empty")){
             return "Parse Data is not present";
         }
@@ -51,7 +55,7 @@ public class GeminiAPICall {
 
         // Print response
         
-        log.debug("Gemini call Exit");
+        logger.info("Gemini call Exit");
         return response.getBody();
 
     }

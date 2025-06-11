@@ -87,3 +87,127 @@
 2025-06-11T23:25:41.381+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
 2025-06-11T23:25:41.474+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
 2025-06-11T23:25:41.476+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:25:41.777+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:25:41.778+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:25:41.779+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:25:41.799+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:25:41.800+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 321 ms
+2025-06-11T23:25:41.923+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:25:41.932+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:25:41.938+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.509 seconds (process running for 602.09)
+2025-06-11T23:25:41.940+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:25:45.896+05:30  INFO 18568 --- [genques] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T23:25:45.897+05:30  INFO 18568 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T23:25:45.898+05:30  INFO 18568 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T23:25:45.913+05:30  INFO 18568 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-06-11T23:25:45.920+05:30  INFO 18568 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@376c43c1
+2025-06-11T23:25:45.920+05:30  INFO 18568 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-06-11T23:36:31.410+05:30  INFO 18568 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T23:36:31.412+05:30  INFO 18568 --- [genques] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:36:31.442+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:36:31.500+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:36:31.500+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:36:31.740+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:36:31.741+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:36:31.742+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:36:31.755+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:36:31.755+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2025-06-11T23:36:31.832+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:36:31.839+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:36:31.843+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.368 seconds (process running for 1251.995)
+2025-06-11T23:36:31.844+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:37:17.957+05:30  INFO 18568 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T23:37:17.960+05:30  INFO 18568 --- [genques] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:37:18.026+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:37:18.086+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:37:18.087+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:37:18.338+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:37:18.339+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:37:18.340+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:37:18.356+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:37:18.356+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2025-06-11T23:37:18.443+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:37:18.450+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:37:18.454+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.393 seconds (process running for 1298.607)
+2025-06-11T23:37:18.456+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:37:57.469+05:30  INFO 18568 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T23:37:57.472+05:30  INFO 18568 --- [genques] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:37:57.529+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:37:57.587+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:37:57.588+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:37:57.869+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:37:57.871+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:37:57.873+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:37:57.890+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:37:57.891+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 302 ms
+2025-06-11T23:37:57.987+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:37:57.992+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:37:57.997+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.431 seconds (process running for 1338.148)
+2025-06-11T23:37:57.998+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:38:37.034+05:30  INFO 18568 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T23:38:37.035+05:30  INFO 18568 --- [genques] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:38:37.090+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:38:37.175+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:38:37.175+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:38:37.413+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:38:37.414+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:38:37.414+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:38:37.429+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:38:37.431+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 253 ms
+2025-06-11T23:38:37.519+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:38:37.528+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:38:37.531+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.389 seconds (process running for 1377.683)
+2025-06-11T23:38:37.533+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:39:42.951+05:30  INFO 18568 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T23:39:42.952+05:30  INFO 18568 --- [genques] [Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:39:42.979+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:39:43.029+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:39:43.029+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:39:43.230+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:39:43.234+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:39:43.236+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:39:43.254+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:39:43.254+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
+2025-06-11T23:39:43.333+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:39:43.342+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:39:43.348+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.336 seconds (process running for 1443.5)
+2025-06-11T23:39:43.349+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:40:21.389+05:30  INFO 18568 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T23:40:21.390+05:30  INFO 18568 --- [genques] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:40:21.413+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:40:21.464+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 18568 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:40:21.464+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:40:21.591+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:40:21.592+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:40:21.592+05:30  INFO 18568 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:40:21.603+05:30  INFO 18568 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:40:21.603+05:30  INFO 18568 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2025-06-11T23:40:21.654+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:40:21.659+05:30  INFO 18568 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:40:21.661+05:30  INFO 18568 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 0.213 seconds (process running for 1481.813)
+2025-06-11T23:40:21.662+05:30  INFO 18568 --- [genques] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T23:40:46.154+05:30  INFO 18568 --- [genques] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:40:46.195+05:30  INFO 18568 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T23:40:49.618+05:30  INFO 15432 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 15432 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-11T23:40:49.621+05:30  INFO 15432 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T23:40:49.695+05:30  INFO 15432 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-11T23:40:49.696+05:30  INFO 15432 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-11T23:40:50.798+05:30  INFO 15432 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-11T23:40:50.810+05:30  INFO 15432 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T23:40:50.810+05:30  INFO 15432 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-11T23:40:50.857+05:30  INFO 15432 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T23:40:50.858+05:30  INFO 15432 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1162 ms
+2025-06-11T23:40:51.290+05:30  INFO 15432 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-11T23:40:51.324+05:30  INFO 15432 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-11T23:40:51.334+05:30  INFO 15432 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 2.173 seconds (process running for 2.47)
+2025-06-11T23:40:58.805+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T23:40:58.806+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T23:40:58.807+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T23:40:58.920+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T23:40:59.211+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22dce3b9
+2025-06-11T23:40:59.215+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T23:40:59.331+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] c.g.genques.service.UploadAPIService     : Gemini call going to start
+2025-06-11T23:40:59.334+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GeminiAPICall  : Inside  Gemini Call
+2025-06-11T23:40:59.336+05:30  INFO 15432 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GetParseData   : Inside Parse Data
+2025-06-11T23:42:19.272+05:30  INFO 15432 --- [genques] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T23:42:19.307+05:30  INFO 15432 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
