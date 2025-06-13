@@ -28,7 +28,7 @@ private static final Logger logger = LoggerFactory.getLogger(GetParseData.class)
             String url = "https://1e8d-35-247-53-54.ngrok-free.app/getParsedata";
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
             parseData = response.getBody();
-            if(parseData == "" || parseData == null){
+            if((parseData == "" || parseData == null ) && !response.getStatusCode().is4xxClientError()){
                 logger.info("Data not available");
                 return "Data is Empty";
             }
