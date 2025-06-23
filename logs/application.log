@@ -1,21 +1,24 @@
-2025-06-13T22:26:00.858+05:30  INFO 14792 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 14792 (D:\genques\target\classes started by vinit in D:\genques)
-2025-06-13T22:26:00.868+05:30  INFO 14792 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-06-13T22:26:00.948+05:30  INFO 14792 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-06-13T22:26:00.949+05:30  INFO 14792 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-06-13T22:26:02.031+05:30  INFO 14792 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-06-13T22:26:02.043+05:30  INFO 14792 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-13T22:26:02.044+05:30  INFO 14792 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-13T22:26:02.102+05:30  INFO 14792 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-13T22:26:02.103+05:30  INFO 14792 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1153 ms
-2025-06-13T22:26:02.588+05:30  INFO 14792 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-13T22:26:02.624+05:30  INFO 14792 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-06-13T22:26:02.636+05:30  INFO 14792 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 2.221 seconds (process running for 2.527)
-2025-06-13T22:26:40.724+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-13T22:26:40.725+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-13T22:26:40.727+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-13T22:26:40.848+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-13T22:26:41.080+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9393c23
-2025-06-13T22:26:41.082+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-13T22:26:41.135+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] c.g.genques.service.UploadAPIService     : Gemini call going to start
-2025-06-13T22:26:41.135+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GeminiAPICall  : Inside  Gemini Call
-2025-06-13T22:26:41.136+05:30  INFO 14792 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GetParseData   : Inside Parse Data
+2025-06-23T22:49:11.824+05:30  INFO 17224 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 17224 (D:\genques\target\classes started by vinit in D:\genques)
+2025-06-23T22:49:11.835+05:30  INFO 17224 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-06-23T22:49:11.909+05:30  INFO 17224 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-23T22:49:11.910+05:30  INFO 17224 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-23T22:49:13.228+05:30  INFO 17224 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-23T22:49:13.241+05:30  INFO 17224 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-23T22:49:13.242+05:30  INFO 17224 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-23T22:49:13.290+05:30  INFO 17224 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-23T22:49:13.291+05:30  INFO 17224 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
+2025-06-23T22:49:13.809+05:30  INFO 17224 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-23T22:49:13.851+05:30  INFO 17224 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-23T22:49:13.864+05:30  INFO 17224 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 2.551 seconds (process running for 3.081)
+2025-06-23T22:50:00.057+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-23T22:50:00.058+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-23T22:50:00.060+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-23T22:50:00.306+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-23T22:50:00.602+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a72ceb1
+2025-06-23T22:50:00.606+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-23T22:50:00.714+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.g.genques.service.UploadAPIService     : Gemini call going to start
+2025-06-23T22:50:00.714+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GeminiAPICall  : Inside  Gemini Call
+2025-06-23T22:50:00.715+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GetParseData   : Inside Parse Data
+2025-06-23T22:50:00.715+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GetParseData   : OCR Runtime URL fetched:- https://1e8d-35-247-53-54.ngrok-free.app/getParsedata
+2025-06-23T22:51:07.342+05:30  INFO 17224 --- [genques] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-23T22:51:07.364+05:30  INFO 17224 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

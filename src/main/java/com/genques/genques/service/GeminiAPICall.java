@@ -1,6 +1,7 @@
 package com.genques.genques.service;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,8 @@ public class GeminiAPICall {
 
     @Autowired
     GetParseData getParseData;
+    @Value("${app.gemini.runtime.url}")
+    private String geminiUrl;
 
       final HttpHeaders headers;
         public GeminiAPICall() {
@@ -32,7 +35,7 @@ public class GeminiAPICall {
         }
 
     public String googleGemniAPICall(String descrition){
-        String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCy0Wx_76QmnxD2OkudtIrvtVaifXptF_M";
+        String url = geminiUrl;
 
         logger.info("Inside  Gemini Call");
         if(getParseData.getParseData().equals("Data is Empty")){

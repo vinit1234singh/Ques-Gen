@@ -2,6 +2,7 @@ package com.genques.genques.service;
 
 
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -19,13 +20,16 @@ public class GetParseData {
 
 private static final Logger logger = LoggerFactory.getLogger(GetParseData.class);
     String parseData = null;
+    @Value("${app.ocr.runtime.url}")
+    private String parseUrl;
 
     /**
      * @return Parsing data from OCR Microservice
      */
     public String getParseData(){
             logger.info("Inside Parse Data");
-            String url = "https://1e8d-35-247-53-54.ngrok-free.app/getParsedata";
+            logger.info("OCR Runtime URL fetched:- "+ parseUrl);
+            String url = parseUrl;
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
             parseData = response.getBody();
             if((parseData == "" || parseData == null ) && !response.getStatusCode().is4xxClientError()){
