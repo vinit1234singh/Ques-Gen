@@ -54,7 +54,7 @@ public class HomeController {
     }
 
     @GetMapping("/uploads/{filename}")
-@ResponseBody
+    @ResponseBody
 public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
     try {
         Path file = Paths.get("uploads").resolve(filename).normalize();

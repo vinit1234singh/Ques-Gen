@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,12 +20,18 @@ import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
+
 public class UploadAPIService {
      private static final String UPLOAD_DIR = "uploads";
      @Autowired
      GetParseData getParseData;
      @Autowired
      GeminiAPICall geminiAPICall;
+
+    public String globalFileName = null;
+    /*
+     * Upload API service
+     */
     public String requestFile(MultipartFile file, String descrition){
         DataSource dataSource = null;
         Connection connection = null;
@@ -66,6 +73,7 @@ public class UploadAPIService {
             System.out.println("data Updated");
             Path filePath = uploadPath.resolve(file.getOriginalFilename());
             Files.copy(file.getInputStream(), filePath,StandardCopyOption.REPLACE_EXISTING);
+            globalFileName = file.getOriginalFilename();
             System.out.println("File Uploaded:--"+file.getOriginalFilename());
             //String responseFileUpload = getParseData.getParseData();
 
@@ -80,6 +88,14 @@ public class UploadAPIService {
             return e.getMessage();
         }
 
+    }
+
+    public void storeFile(String globalFileName){
+        this.globalFileName = globalFileName;
+    }
+    
+    public String getFileName(){
+        return globalFileName;
     }
 
 }

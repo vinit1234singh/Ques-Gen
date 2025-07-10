@@ -1,24 +1,146 @@
-2025-06-23T22:49:11.824+05:30  INFO 17224 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 17224 (D:\genques\target\classes started by vinit in D:\genques)
-2025-06-23T22:49:11.835+05:30  INFO 17224 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-06-23T22:49:11.909+05:30  INFO 17224 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-06-23T22:49:11.910+05:30  INFO 17224 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-06-23T22:49:13.228+05:30  INFO 17224 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-06-23T22:49:13.241+05:30  INFO 17224 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-23T22:49:13.242+05:30  INFO 17224 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-23T22:49:13.290+05:30  INFO 17224 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-23T22:49:13.291+05:30  INFO 17224 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
-2025-06-23T22:49:13.809+05:30  INFO 17224 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-06-23T22:49:13.851+05:30  INFO 17224 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-06-23T22:49:13.864+05:30  INFO 17224 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 2.551 seconds (process running for 3.081)
-2025-06-23T22:50:00.057+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-23T22:50:00.058+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-23T22:50:00.060+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-06-23T22:50:00.306+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-23T22:50:00.602+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a72ceb1
-2025-06-23T22:50:00.606+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-23T22:50:00.714+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.g.genques.service.UploadAPIService     : Gemini call going to start
-2025-06-23T22:50:00.714+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GeminiAPICall  : Inside  Gemini Call
-2025-06-23T22:50:00.715+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GetParseData   : Inside Parse Data
-2025-06-23T22:50:00.715+05:30  INFO 17224 --- [genques] [http-nio-8081-exec-2] c.genques.genques.service.GetParseData   : OCR Runtime URL fetched:- https://1e8d-35-247-53-54.ngrok-free.app/getParsedata
-2025-06-23T22:51:07.342+05:30  INFO 17224 --- [genques] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-23T22:51:07.364+05:30  INFO 17224 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T16:26:31.130+05:30  INFO 9140 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 9140 (D:\genques\target\classes started by vinit in D:\genques)
+2025-07-10T16:26:31.232+05:30  INFO 9140 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:26:31.295+05:30  INFO 9140 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-10T16:26:31.296+05:30  INFO 9140 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-10T16:26:32.391+05:30  INFO 9140 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-07-10T16:26:32.407+05:30  INFO 9140 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T16:26:32.408+05:30  INFO 9140 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-10T16:26:32.453+05:30  INFO 9140 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-10T16:26:32.454+05:30  INFO 9140 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1157 ms
+2025-07-10T16:26:32.543+05:30  WARN 9140 --- [genques] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeController': Unsatisfied dependency expressed through field 'uploadAPIService': Error creating bean with name 'uploadAPIService': Unsatisfied dependency expressed through field 'getParseData': Error creating bean with name 'getParseData' defined in file [D:\genques\target\classes\com\genques\genques\service\GetParseData.class]: Failed to instantiate [com.genques.genques.service.GetParseData]: Constructor threw exception
+2025-07-10T16:26:32.546+05:30  INFO 9140 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-10T16:26:32.564+05:30  INFO 9140 --- [genques] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T16:26:32.588+05:30 ERROR 9140 --- [genques] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeController': Unsatisfied dependency expressed through field 'uploadAPIService': Error creating bean with name 'uploadAPIService': Unsatisfied dependency expressed through field 'getParseData': Error creating bean with name 'getParseData' defined in file [D:\genques\target\classes\com\genques\genques\service\GetParseData.class]: Failed to instantiate [com.genques.genques.service.GetParseData]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.genques.genques.GenquesApplication.main(GenquesApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'uploadAPIService': Unsatisfied dependency expressed through field 'getParseData': Error creating bean with name 'getParseData' defined in file [D:\genques\target\classes\com\genques\genques\service\GetParseData.class]: Failed to instantiate [com.genques.genques.service.GetParseData]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1682) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getParseData' defined in file [D:\genques\target\classes\com\genques\genques\service\GetParseData.class]: Failed to instantiate [com.genques.genques.service.GetParseData]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1682) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 40 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.genques.genques.service.GetParseData]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 50 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "com.genques.genques.service.UploadAPIService.getFileName()" because "this.uploadAPIService" is null
+	at com.genques.genques.service.GetParseData.<init>(GetParseData.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.7.jar:6.2.7]
+	... 52 common frames omitted
+
+2025-07-10T17:00:37.943+05:30  INFO 22496 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 22496 (D:\genques\target\classes started by vinit in D:\genques)
+2025-07-10T17:00:37.948+05:30  INFO 22496 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T17:00:38.027+05:30  INFO 22496 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-10T17:00:38.031+05:30  INFO 22496 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-10T17:00:39.228+05:30  INFO 22496 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-07-10T17:00:39.245+05:30  INFO 22496 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T17:00:39.246+05:30  INFO 22496 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-10T17:00:39.291+05:30  INFO 22496 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-10T17:00:39.292+05:30  INFO 22496 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1260 ms
+2025-07-10T17:00:39.378+05:30  WARN 22496 --- [genques] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeController': Unsatisfied dependency expressed through field 'uploadAPIService': Error creating bean with name 'uploadAPIService': Unsatisfied dependency expressed through field 'getParseData': Error creating bean with name 'getParseData': Unsatisfied dependency expressed through field 'uploadAPIService': Error creating bean with name 'uploadAPIService': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2025-07-10T17:00:39.382+05:30  INFO 22496 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-10T17:00:39.407+05:30  INFO 22496 --- [genques] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T17:00:39.440+05:30 ERROR 22496 --- [genques] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   homeController (field com.genques.genques.service.UploadAPIService com.genques.genques.controller.HomeController.uploadAPIService)
+???????
+|  uploadAPIService (field com.genques.genques.service.GetParseData com.genques.genques.service.UploadAPIService.getParseData)
+?     ?
+|  getParseData (field private com.genques.genques.service.UploadAPIService com.genques.genques.service.GetParseData.uploadAPIService)
+???????
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2025-07-10T17:01:26.975+05:30  INFO 10928 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 10928 (D:\genques\target\classes started by vinit in D:\genques)
+2025-07-10T17:01:26.978+05:30  INFO 10928 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T17:01:27.043+05:30  INFO 10928 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-10T17:01:27.044+05:30  INFO 10928 --- [genques] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-10T17:01:28.150+05:30  INFO 10928 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-07-10T17:01:28.166+05:30  INFO 10928 --- [genques] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T17:01:28.167+05:30  INFO 10928 --- [genques] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-10T17:01:28.209+05:30  INFO 10928 --- [genques] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-10T17:01:28.210+05:30  INFO 10928 --- [genques] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1165 ms
+2025-07-10T17:01:28.705+05:30  INFO 10928 --- [genques] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T17:01:28.753+05:30  INFO 10928 --- [genques] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-07-10T17:01:28.764+05:30  INFO 10928 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Started GenquesApplication in 2.247 seconds (process running for 2.54)
+2025-07-10T17:01:47.577+05:30  INFO 10928 --- [genques] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-10T17:01:47.577+05:30  INFO 10928 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-10T17:01:47.579+05:30  INFO 10928 --- [genques] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-10T17:01:47.678+05:30  INFO 10928 --- [genques] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-10T17:02:50.407+05:30  INFO 10928 --- [genques] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 15 class path changes (0 additions, 0 deletions, 15 modifications)
+2025-07-10T17:02:50.412+05:30  INFO 10928 --- [genques] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T17:02:50.447+05:30  INFO 10928 --- [genques] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T17:02:50.511+05:30  INFO 10928 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : Starting GenquesApplication using Java 17.0.12 with PID 10928 (D:\genques\target\classes started by vinit in D:\genques)
+2025-07-10T17:02:50.512+05:30  INFO 10928 --- [genques] [restartedMain] com.genques.genques.GenquesApplication   : No active profile set, falling back to 1 default profile: "default"
