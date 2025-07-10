@@ -9,7 +9,7 @@ def perform_ocr_from_springboot(filename: str) -> str:
     Fetches an image from Spring Boot's file-serving endpoint and performs OCR on it.
     """
     try:
-        url = f"https://springboot-app.up.railway.app/uploads/{filename}"
+        url = f"https://romantic-victory-production.up.railway.app/home/uploads/{filename}"
         response = requests.get(url)
         response.raise_for_status()
         image = Image.open(BytesIO(response.content))
