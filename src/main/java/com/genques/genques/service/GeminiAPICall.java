@@ -41,9 +41,9 @@ public class GeminiAPICall {
         if(getParseData.getParseData().equals("Data is Empty")){
             return "Parse Data is not present";
         }
-        else if (getParseData.getParseData().contains("4")) {
-            return "Client Side Error";
-        }
+        // else if (getParseData.getParseData().contains("4")) {
+        //     return "Client Side Error";
+        // }
         // Create request body
         TextPart textPart = new TextPart(getParseData.getParseData()+descrition);
         PartWrapper partWrapper = new PartWrapper(Collections.singletonList(textPart));
