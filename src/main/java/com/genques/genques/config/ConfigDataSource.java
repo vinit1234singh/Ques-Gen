@@ -12,10 +12,9 @@ public class ConfigDataSource {
 
         DataSourceBuilder<?> dsb = DataSourceBuilder.create();
         dsb.driverClassName("com.mysql.cj.jdbc.Driver");
-        dsb.url("jdbc:mysql://localhost:3306/uploadapi");
+        dsb.url("jdbc:mysql://root:rIvYFPWTrILzAoUSNEqmGPEpnWOroLfc@mysql.railway.internal:3306/railway");
         dsb.username("root");
-        dsb.password("");
-        System.out.println("Connection Establish");
+        dsb.password("rIvYFPWTrILzAoUSNEqmGPEpnWOroLfc");
         return dsb.build();
         
     }

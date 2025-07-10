@@ -44,6 +44,7 @@ public class UploadAPIService {
             java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
             dataSource = ConfigDataSource.source();
             connection = dataSource.getConnection();
+            System.out.println("Connection Establish in upload API Service");
             preparedStatement = connection.prepareStatement("insert into filelstr (File_Name, File_Extension, File_Path, File_Size, File_Upload_Date) values (?,?,?,?,?)");
             preparedStatement.setString(1, file.getOriginalFilename());
             int index = 0;
